@@ -16,10 +16,10 @@ function (Settings) {
       <% type=options['type'] %>
       '<%= name %>': {
         type: '<%= type %>',
-        url: <%= options['url'] %>,        
+        url: '<%= options['url'] %>',        
         <% if type == 'influxdb' %>
-        username: <%= options['username'] %>,
-        password: <%= options['password'] %>,
+        username: '<%= options['username'] %>',
+        password: '<%= options['password'] %>',
         <% end %>
         default: <%= options['default'] || 'false' %>
       },
