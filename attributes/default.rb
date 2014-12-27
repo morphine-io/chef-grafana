@@ -6,7 +6,7 @@ default['grafana']['install_dir'] = "/opt/grafana"
 default['grafana']['repo'] = "https://github.com/torkelo/grafana.git"
 default['grafana']['elasticsearch_url'] = '"http://"+window.location.hostname+":9200"'
 default['grafana']['datasources'] = {
-	'graphite' => { 'type' => 'graphite', 'url' => '"http://"+window.location.hostname+":8080"', 'default' => 'true'},
+	
 }
 default['grafana']['port'] = "80"
 default['grafana']['nginx']['install_recipe'] = 'source'
